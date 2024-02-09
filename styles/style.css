@@ -69,15 +69,15 @@ ol {
   flex-direction: column;
   margin-right: 30px;
   height: 456px;
-  margin-top: 211px;
+  margin-top: 289px;
 }
 
 .content__details {
   align-self: flex-end;
   height: 534px;
-  margin-top: 133px;
+  margin-top: 211px;
 }
-
+/* 78 */
 .search-form {
   display: flex;
   flex-direction: row;
