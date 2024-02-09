@@ -83,7 +83,7 @@ ol {
 
 .search-form fieldset:first-child {
   width: 225px;
-  margin-right: 54px;
+  margin-right: 40px;
 }
 
 .search-form__fieldset {
@@ -93,7 +93,7 @@ ol {
 
 
 .search-form__fieldset-title {
-  margin-bottom: 7px;
+  margin-bottom: 4px;
   color: #FFF;
   font-family: "Fira Sans Condensed";
   font-size: 18px;
@@ -253,7 +253,7 @@ input {
 }
 
 .search-form__submit-button {
-  width: 182px;
+  width: 194px;
   margin-left: 40px;
   margin-top: 18px;
 }
@@ -281,11 +281,11 @@ input {
   width: 15px;
   height: 15px;
   background-color: #FFF;
-  position: absolute;
+  position: relative;
   content: '';
   inset: 0;
-  top: 3px;
-  left: 2px;
+  top: 1px;
+  left: 1px;
 }
 /* .search-form__label-text {
   margin-right: 15px;
