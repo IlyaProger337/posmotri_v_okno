@@ -69,13 +69,13 @@ ol {
   flex-direction: column;
   margin-right: 30px;
   height: 456px;
-  margin-top: 289px;
+  margin-top: 328px;
 }
 
 .content__details {
   align-self: flex-end;
   height: 534px;
-  margin-top: 211px;
+  margin-top: 250px;
 }
 /* 78 */
 .search-form {
