@@ -87,10 +87,6 @@ ol {
   grid-area: search-form;
 }
 
-
-
-
-
 .search-form__fieldset-title {
   margin-bottom: 4px;
   color: #FFF;
@@ -125,14 +121,13 @@ ol {
   position: relative;
   overflow-y: scroll;
   height: 298px;
-  width: 394px;
+  width: 418px;
 }
 
 .content__video-card {
   display: flex;
   flex-direction: row;
   align-self: flex-start;
-  width: 394px;
 }
 
 .content__video-card-description-container {
@@ -152,7 +147,6 @@ ol {
   font-weight: 400;
   line-height: normal;
   display: flex;
-  width: 225px;
   min-height: 27px;
   align-items: center;
   gap: 10px;
@@ -162,8 +156,6 @@ ol {
   border-right: none;
 }
 
-
-
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
@@ -172,34 +164,38 @@ ol {
 .content__list-item {
   margin-bottom: 30px;
 }
-.cards-list-item-template:last-child {
+.content__list-item:last-child {
   margin-bottom: 0;
 }
-
 
 .content__card-link {
   text-decoration: none;
   color: #FFF;
   display: block;
-  margin-left: 2px;
-  margin-top: 2px;
+  margin: 2px 2px 2px 2px;
 }
+
 .content__card-link:active {
   background: #545050;
 }
+
 .content__card-link_current {
   background: #545050;
 }
+
 .content__card-link:hover {
   text-decoration: underline;
 }
+
 .content__card-link:focus {
   outline: 0;
 }
+
 .content__card-link:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
+
 .content__video-card-title {
   color: #FFF;
   font-family: Oswald, sans-serif;
@@ -232,13 +228,13 @@ ol {
   white-space: nowrap;
 }
 
-.search-form__fieldset:first-child {
+.search-form__fieldset {
   border: none;
 }
 
-.search-form__fieldset:nth-child(2) {
+/* .search-form__fieldset:nth-child(2) {
   border: none;
-}
+} */
 
 input {
   cursor: pointer;
@@ -258,13 +254,7 @@ input {
   margin-right: 5px;
   margin-top: 1px;
 }
-/* .search-form__pseudo-checkbox:active {
-  width: 15px;
-  height: 15px;
-  background-color: #FFF;
-  padding: 1px 1px 1px 1px;
-  border: 1px solid #FFF;
-} */
+
 .search-form__checkbox:checked + .search-form__pseudo-checkbox:after {
   width: 15px;
   height: 15px;
@@ -275,26 +265,20 @@ input {
   top: 1px;
   left: 1px;
 }
-/* .search-form__label-text {
-  margin-right: 15px;
-} */
+
 .search-form__label {
   display: flex;
   flex-direction: row;
   position: relative;
 }
-/* ////////////// */
+
 .search-form__checkbox-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-column-gap: 15px;
 }
-/* .search-form__checkbox-list:last-child:last-child {
-  margin-right: 0;
-} */
-/* ////////////// */
-/* грид сделать бы */
+
 .button {
   height: 34px;
   gap: 10px;
@@ -319,17 +303,14 @@ input {
   margin-left: 2px;
 }
 
-/* 212 */
-/* 26 */
-/* 78 */
-
-/* 800 */
-/* 466 */
-
-/* 175 */
 .search-form__textfield:focus {
   outline: 0;
   outline-offset: 0;
+}
+
+.search-form__textfield:active {
+  border-left: 1px solid #fff; 
+  border-right: 1px solid #fff; 
 }
 
 .search-form__label:has(:focus-visible) {
@@ -337,16 +318,7 @@ input {
   outline-offset: 1px;
   /* outline: none; */
 }
-.search-form__checkbox-list label:nth-child(2):has(:focus-visible) {
-  outline: 1px solid #FFF;
-  outline-offset: 1px;
-}
 
-.search-form__textfield:focus {
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
-}
-/* /////////// */
 .button:hover {
   text-decoration: underline;
 }
@@ -364,21 +336,13 @@ input {
   outline: 1px solid #FFF;
   outline-offset: 1px;
 }
-/* //////////// */
 
 .search-form__label:focus {
   outline: 0;
   outline-offset: 0;  
 }
-/* крч, завтра как парень показывал по классу выбрать или чет типо того */
 
-/* .search-form__fieldset label:first-child:has(:focus-visible) {
-  outline: 1px solid #FFF;
-  outline-offset: 1px;
-} */
-
-
-.search-form__checkbox-list label:nth-child(1n):hover {
+label:has(.search-form__label-text):hover {
   text-decoration: underline;
 }
 
